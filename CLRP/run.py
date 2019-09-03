@@ -62,7 +62,6 @@ def clrp(out, target_class, contrastive_signal = False, CLRP = 'type1'):
 
 # visualize the saliency maps (LRP and CLRP)
 def visualize(sm_lrp, sm_contrast, name):
-    print(sm_lrp.shape, sm_contrast.shape)
     sm_lrp_ = (sm_lrp[0]/sm_lrp.max()).transpose((1, 2, 0))
     sm_lrp_ = np.maximum(0, sm_lrp_)
     Image.fromarray((sm_lrp_*255).astype(np.uint8), mode='RGB').save('SMs/'+ name + '_LRP.png')
@@ -74,6 +73,8 @@ def visualize(sm_lrp, sm_contrast, name):
     sm_clrp_ = (sm_clrp[0]/sm_clrp.max()).transpose((1, 2, 0))
     sm_clrp_ = np.maximum(0, sm_clrp_)
     Image.fromarray((sm_clrp_*255).astype(np.uint8), mode='RGB').save('SMs/'+ name + '_CLRP.png')
+    
+    print(name, 'Explaining Classification finished!')
 
 
 ## load pre-trained VGG16 model and register hook functions in the loaded model
