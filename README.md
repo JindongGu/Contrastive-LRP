@@ -5,7 +5,7 @@ Requirements: numpy 1.14.2; python 3.6.4; pytorch 1.1.0;
 
 The code creates CLRP saliency maps to explain individual classification on VGG16 model.
 ```
-python main.py
+python CLRP/run.py
 ```
 
 
