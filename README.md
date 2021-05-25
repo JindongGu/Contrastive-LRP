@@ -1,7 +1,7 @@
 # Contrastive_LRP
 
 ## This is a pytorch implemention of the following work Contrastive layerwise relevance propagation (CLRP):
-Requirements: numpy==1.14.2; pytho==3.6.4; pytorch==1.1.0;
+Requirements: numpy==1.14.2; python==3.6.4; pytorch==1.1.0;
 
 The code creates CLRP saliency maps to explain individual classification on VGG16 model.
 ```
