@@ -7,7 +7,7 @@ The code creates CLRP saliency maps to explain individual classification on VGG1
 ```
 python CLRP/run.py
 ```
-The results are visualized as follows:
+The results are visualized as follows (LRP vs. CLRP):
 ![CLRP vs.LRP](CLRP/SMs/vgg_explanations.png)
 
 
